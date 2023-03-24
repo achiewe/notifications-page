@@ -82,7 +82,7 @@ body{
     color:var(--white);
 }
 
-#mark-unread{
+#mark-read{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -141,6 +141,7 @@ body{
     letter-spacing: 0px;
     text-align: left;
     color:var(--dark-grey-blue);
+    width:250px;
 }
 
 .fullname{
@@ -154,7 +155,6 @@ body{
 }
 
 .event{
-    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -164,15 +164,13 @@ body{
     color:var(--dark-grey-blue);
 }
 
-.event::after{
-    position: absolute;
-    content:'';
+#webber-dot{
     width:8px;
     height:8px;
     background-color: var(--red);
-    border-radius: 10px;
-    top:5px;
-    right:-15px;
+    border-radius: 20px;
+    margin-left: -35px;
+    margin-bottom:5px;
 }
 
 .long-ago{
@@ -186,7 +184,6 @@ body{
 }
 
 .angela-p{
-    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 14px;
     font-weight: 500;
@@ -196,15 +193,13 @@ body{
     color:var(--dark-grey-blue);
 }
 
-.angela-p::after{
-    position: absolute;
-    content:'';
+#angela-dot{
     width:8px;
     height:8px;
     background-color: var(--red);
-    border-radius: 10px;
-    top:7px;
-    right:-15px;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-bottom:3px;
 }
 
 .jacob-p{
@@ -219,7 +214,6 @@ body{
 }
 
 .chessclub{
-    position: relative;
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -229,15 +223,13 @@ body{
     color:var(--blue);
 }
 
-.chessclub::after{
-    position: absolute;
-    content:'';
+#jacob-dot{
     width:8px;
     height:8px;
     background-color: var(--red);
-    border-radius: 10px;
-    top:5px;
-    right:-15px;
+    border-radius: 20px;
+    margin-left: -130px;
+    margin-bottom:5px;
 }
 
 .unactive-section {
@@ -428,7 +420,7 @@ body{
         color:var(--white);
     }
     
-    #mark-unread{
+    #mark-read{
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 16px;
         font-weight: 500;
@@ -437,7 +429,7 @@ body{
         color:var(--dark-grey-blue);
     }
 
-    #mark-unread:hover{
+    #mark-read:hover{
         color:var(--blue);
         cursor: pointer;
     }
@@ -460,6 +452,7 @@ body{
         flex-direction: row;
         align-items: flex-start;
         gap:19px;
+        cursor:pointer;
     }
     
     .avatar-image{
@@ -491,6 +484,7 @@ body{
         letter-spacing: 0px;
         text-align: left;
         color:var(--dark-grey-blue);
+        width:550px;
     }
 
     .fullname{
@@ -509,7 +503,6 @@ body{
     }
 
     .event{
-        position: relative;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -519,22 +512,20 @@ body{
         color:var(--dark-grey-blue);
     }
 
+    #webber-dot{
+        width:8px;
+        height:8px;
+        background-color: var(--red);
+        border-radius: 20px;
+        margin-left: -25px;
+        margin-bottom:5px;
+    }
+
     .event:hover{
         color:var(--blue);
         cursor: pointer;
     }
-    
-    .event::after{
-        position: absolute;
-        content:'';
-        width:8px;
-        height:8px;
-        background-color: var(--red);
-        border-radius: 10px;
-        top:7px;
-        right:-15px;
-    }
-    
+
     .long-ago{
         font-family:'Plus Jakarta Sans', sans-serif;
         font-size: 16px;
@@ -546,7 +537,6 @@ body{
     }
 
     .angela-p{
-        position: relative;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 16px;
         font-weight: 500;
@@ -554,17 +544,6 @@ body{
         letter-spacing: 0px;
         text-align: left;
         color:var(--dark-grey-blue);
-    }
-    
-    .angela-p::after{
-        position: absolute;
-        content:'';
-        width:8px;
-        height:8px;
-        background-color: var(--red);
-        border-radius: 10px;
-        top:7px;
-        right:-15px;
     }
     
     .jacob-p{
@@ -579,7 +558,6 @@ body{
     }
     
     .chessclub{
-        position: relative;
         font-family: 'Plus Jakarta Sans', sans-serif;
         font-size: 16px;
         font-weight: 700;
@@ -589,18 +567,16 @@ body{
         color:var(--blue);
         cursor:pointer;
     }
-    
-    .chessclub::after{
-        position: absolute;
-        content:'';
+
+    #jacob-dot{
         width:8px;
         height:8px;
         background-color: var(--red);
-        border-radius: 10px;
-        top:5px;
-        right:-15px;
+        border-radius: 20px;
+        margin-left: -10px;
+        margin-bottom:5px;
     }
-    
+
     .unactive-section {
         width:670px;
         display: flex;
