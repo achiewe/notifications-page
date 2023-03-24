@@ -1,0 +1,711 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --very-dark-grey-blue:#1C202B;
+    --blue:#0A327B;
+    --dark-grey-blue:#5E6778;
+    --white:#FFFFFF;
+    --snow:#F7FAFD;
+    --red:#F65552;
+    --grey-blue:#939CAD;
+    --very-light-grey-blue:#DDE7EE;
+    --light-grey:#E5EFFA;
+}
+
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--snow);
+}
+
+.main-card{
+    width:100%;
+    max-width:730px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:26px;
+    padding-top: 24px;
+    padding-bottom:45px;
+}
+
+.header-div{
+    width:343px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notification-div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:9px;
+}
+
+.notification-div h2{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 25px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--very-dark-grey-blue);
+}
+
+.quantity-div{
+    width:32px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    border-radius: 6px;
+}
+
+#notification-quantity{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--white);
+}
+
+#mark-unread{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color:var(--dark-grey-blue);
+}
+
+.active-section{
+    width:343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:10px;
+}
+
+.activate-profile{
+    width:100%;
+    background-color: var(--snow);
+    padding: 16px 0 16px 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:13px;
+}
+
+.avatar-image{
+    width:39px;
+    height:39px;
+}
+
+.person-content{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:3px;
+}
+
+.notification-content{
+    display: flex;
+    flex-direction: row;
+    gap:6px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.webber-p{
+   font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+}
+
+.fullname{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--very-dark-grey-blue);
+}
+
+.event{
+    position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+}
+
+.event::after{
+    position: absolute;
+    content:'';
+    width:8px;
+    height:8px;
+    background-color: var(--red);
+    border-radius: 10px;
+    top:5px;
+    right:-15px;
+}
+
+.long-ago{
+    font-family:'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--grey-blue);
+}
+
+.angela-p{
+    position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+}
+
+.angela-p::after{
+    position: absolute;
+    content:'';
+    width:8px;
+    height:8px;
+    background-color: var(--red);
+    border-radius: 10px;
+    top:7px;
+    right:-15px;
+}
+
+.jacob-p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+    width:250px;
+}
+
+.chessclub{
+    position: relative;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--blue);
+}
+
+.chessclub::after{
+    position: absolute;
+    content:'';
+    width:8px;
+    height:8px;
+    background-color: var(--red);
+    border-radius: 10px;
+    top:5px;
+    right:-15px;
+}
+
+.unactive-section {
+    width:343px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:42px;
+}
+
+.rizky-main{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:12px;
+}
+
+.unactive-profile{
+    width:100%;
+    padding: 16px 0 16px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap:13px;
+}
+
+.rizky-content{
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+
+.private-message{
+    width:263px;
+    border:1px solid var(--very-light-grey-blue);
+    padding: 16px;
+}
+
+.message-p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+}
+
+.kimberly-main{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+}
+
+.kimberly-p{
+    font-family:  'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    width:192px;
+    color:var(--dark-grey-blue);
+}
+
+.nathan-event{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+}
+
+.nathan-p{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--dark-grey-blue);
+    width:250px;
+}
+
+.anna-chessclub{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color:var(--blue);
+}
+
+
+
+
+
+
+
+
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+/* dektop version */
+
+@media screen and (min-width:1024px){
+    .main-card{
+        width:100%;
+        max-width:730px;
+        background-color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:26px;
+        padding-top: 33px;
+        padding-bottom:18px;
+        border-radius: 15px;
+        margin-top:63px;
+        margin-bottom:89px;
+    }
+    
+    .header-div{
+        width:668px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .notification-div{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:11px;
+    }
+    
+    .notification-div h2{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 30.24px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--very-dark-grey-blue);
+    }
+
+    .quantity-div{
+        width:32px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--blue);
+        border-radius: 6px;
+    }
+
+    #notification-quantity{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--white);
+    }
+    
+    #mark-unread{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0px;
+        color:var(--dark-grey-blue);
+    }
+
+    #mark-unread:hover{
+        color:var(--blue);
+        cursor: pointer;
+    }
+    
+    .active-section{
+        width:670px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap:8px;
+    }
+
+    .activate-profile{
+        width:100%;
+        background-color: var(--snow);
+        padding: 18px 0 18px 20px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:19px;
+    }
+    
+    .avatar-image{
+        width:45px;
+        height:45px;
+    }
+    
+    .person-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap:4px;
+    }
+    
+    .notification-content{
+        display: flex;
+        flex-direction: row;
+        gap:6px;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    
+    .webber-p{
+       font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+    }
+
+    .fullname{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 800;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--very-dark-grey-blue);
+    }
+    
+    .fullname:hover{
+        color:var(--blue);
+        cursor:pointer;
+    }
+
+    .event{
+        position: relative;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+    }
+
+    .event:hover{
+        color:var(--blue);
+        cursor: pointer;
+    }
+    
+    .event::after{
+        position: absolute;
+        content:'';
+        width:8px;
+        height:8px;
+        background-color: var(--red);
+        border-radius: 10px;
+        top:7px;
+        right:-15px;
+    }
+    
+    .long-ago{
+        font-family:'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--grey-blue);
+    }
+
+    .angela-p{
+        position: relative;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+    }
+    
+    .angela-p::after{
+        position: absolute;
+        content:'';
+        width:8px;
+        height:8px;
+        background-color: var(--red);
+        border-radius: 10px;
+        top:7px;
+        right:-15px;
+    }
+    
+    .jacob-p{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+        width:400px;
+    }
+    
+    .chessclub{
+        position: relative;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--blue);
+        cursor:pointer;
+    }
+    
+    .chessclub::after{
+        position: absolute;
+        content:'';
+        width:8px;
+        height:8px;
+        background-color: var(--red);
+        border-radius: 10px;
+        top:5px;
+        right:-15px;
+    }
+    
+    .unactive-section {
+        width:670px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap:46px;
+    }
+    
+    .rizky-main{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .unactive-profile{
+        width:100%;
+        padding: 18px 20px 20px 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:19px;
+    }
+    
+    .rizky-content{
+        display:flex;
+        flex-direction: column;
+        gap:13px;
+    }
+    
+    .private-message{
+        width:566px;
+        border:1px solid var(--very-light-grey-blue);
+        padding: 17px 20px 20px 20px;
+    }
+
+    .private-message:hover{
+        background-color: var(--light-grey);
+        border:1px solid var(--very-light-grey-blue);
+        cursor:pointer;
+    }
+    
+    
+    .message-p{
+        width:526px;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+    }
+    
+    .kimberly-main{
+        width:100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+        padding-right:20px;
+    }
+
+    .kimberly-p{
+        font-family:  'Plus Jakarta Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        width:340px;
+        color:var(--dark-grey-blue);
+    }
+    
+    .nathan-event{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+    }
+
+    .nathan-event:hover{
+        color:var(--blue);
+        cursor: pointer;
+    }
+
+    .nathan-p{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--dark-grey-blue);
+        width:600px;
+    }
+    
+    .anna-chessclub{
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.16px;
+        letter-spacing: 0px;
+        text-align: left;
+        color:var(--blue);
+        cursor: pointer;
+    }
+
+
+}
